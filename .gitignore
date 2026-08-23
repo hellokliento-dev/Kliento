@@ -3,3 +3,6 @@ node_modules/
 public/config.js
 .env
 .env.local
+
+.vercel
+.env*

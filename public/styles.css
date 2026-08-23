@@ -206,11 +206,13 @@ section {
 }
 
 .hero h1 {
-  font-size: clamp(2.2rem, 5.4vw, 3.6rem);
+  font-size: clamp(2.1rem, 4.6vw, 3.2rem);
   font-weight: 800;
   letter-spacing: -0.03em;
-  line-height: 1.12;
-  margin-bottom: 22px;
+  line-height: 1.18;
+  max-width: 900px;
+  margin: 0 auto 22px;
+  text-wrap: balance;
 }
 
 .hero-sub {
@@ -229,12 +231,14 @@ section {
 }
 
 .metric-card {
-  background: var(--bg-card);
+  background: #1E293B;
   border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--accent);
   border-radius: 12px;
   padding: 14px 20px;
   font-size: 0.95rem;
   font-weight: 500;
+  color: var(--text-white);
 }
 
 .hero-cta {
@@ -242,38 +246,6 @@ section {
   flex-direction: column;
   align-items: center;
   gap: 16px;
-}
-
-/* ---------- Social proof ---------- */
-.social-proof {
-  padding: 32px 0;
-  border-top: 1px solid var(--border-subtle);
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.social-proof .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  text-align: center;
-}
-
-.social-proof p {
-  color: var(--text-gray);
-  font-size: 0.95rem;
-}
-
-.stars {
-  color: var(--accent);
-  font-size: 1.1rem;
-  letter-spacing: 2px;
-}
-
-.waitlist-count {
-  color: var(--text-white);
-  font-weight: 600;
 }
 
 /* ---------- Problem cards ---------- */
